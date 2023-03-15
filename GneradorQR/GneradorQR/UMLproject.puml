@@ -1,0 +1,40 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class com.google.zxing.BarcodeFormat
+class com.google.zxing.WriterException
+class com.google.zxing.common.BitMatrix
+class com.google.zxing.qrcode.QRCodeWriter
+class gneradorqr.GneradorQR
+class gneradorqr.QR
+class java.awt.Color
+class java.awt.Graphics2D
+class java.awt.Image
+class java.awt.image.BufferedImage
+class java.io.File
+class java.io.IOException
+class java.util.UUID
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.imageio.ImageIO
+class javax.swing.ImageIcon
+class javax.swing.JFileChooser
+class javax.swing.JFrame
+gneradorqr.QR ..> java.lang.SuppressWarnings
+gneradorqr.QR ..> com.google.zxing.BarcodeFormat
+gneradorqr.QR ..> com.google.zxing.WriterException
+gneradorqr.QR ..> com.google.zxing.common.BitMatrix
+gneradorqr.QR ..> com.google.zxing.qrcode.QRCodeWriter
+gneradorqr.QR ..> java.awt.Color
+gneradorqr.QR ..> java.awt.Graphics2D
+gneradorqr.QR ..> java.awt.Image
+gneradorqr.QR ..> java.awt.image.BufferedImage
+gneradorqr.QR ..> java.io.File
+gneradorqr.QR ..> java.io.IOException
+gneradorqr.QR ..> java.util.UUID
+gneradorqr.QR ..> java.util.logging.Level
+gneradorqr.QR ..> java.util.logging.Logger
+gneradorqr.QR ..> javax.imageio.ImageIO
+gneradorqr.QR ..> javax.swing.ImageIcon
+gneradorqr.QR ..> javax.swing.JFileChooser
+gneradorqr.QR --|> javax.swing.JFrame
+@enduml
